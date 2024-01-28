@@ -1,2 +1,2 @@
 # NJILA
- Projecto web e mobile a ser desenvolvido em equipe
+ Projecto de mobilidade urbana a ser desenvolvido para web e mobile em equipe.
