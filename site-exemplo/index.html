@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Njila</title>
+
     <link rel="stylesheet" href="/css/style.css">
-    
+
     <!---Link bootstrap--->
     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css">
 
@@ -20,34 +21,83 @@
 
 </head>
 <body>
-    <!---NavBar--->
+    <!--HEADER-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/img/Projrto-01.png" alt="Njila" width="190rem">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#home-menu">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Motorista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Passageiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                
+                </ul>
+             
+              </div>
+            </div>         
+        </nav>
+    </header>
+    <!--End HEADER-->
+
+    <section class="home" id="home-menu">       
+        <div id="about-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                    <img class="img-fluid" src="/img/taxi-service.jpg"  alt="taxi">
+                   <button type="button" class="btn btn-outline-warning"> <i class="fa-brands fa-google-play"></i>Google Play</button>
+
+                    <button type="button" class="btn btn-outline-dark"><i class="fa-brands fa-apple"></i>App Store</button>
+              </div>
+              <div class="col-md-6">
+                <h2 class="about-title">A forma <span>mais fácil </span>para chegar onde quiser</h2>
+                    <p>Sem precisar ligar,eserunt suscipit neque, incidunt adipisicing elit. Enim quia quod vitae numquam commodi laudantium, saepe explicabo quam magni minima aperiam maiores, deserunt suscipit neque, incidunt sit rerum ea dignissimos.</p>   
+                </div>
+            </div>
+          </div>
+        </div>  
+    </section>
+
+    <!--Quem somos-->
+    <section class="quem-somos">
+        <div class="container">
+            <h3>Quem Somos</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, fugiat amet error ducimus incidunt iste quia vitae, numquam eligendi, quos voluptas et ut eaque praese</p>
+            
+        </div>
+    </section>
+    
+
+    <!---NavBar-
     <nav class="navbar bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="#">
              <img src="/img/Projrto-02.png" alt="Njila" width="190rem">
           </a>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Como funciona</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" >Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contactos</a>
-            </li>
-        
-        </ul>
+          <
         </div>
     </nav>
 
-    
+    ---->
     
     <!--Home-->
     <section class="home" id="home-menu">       
@@ -55,20 +105,16 @@
           <div class="container">
               <div class="row">
                     <div class="col-md-6">
-                        <img class="img-fluid" src="/img/taxi-service.jpg"  alt="taxi">
-                       <button type="button" class="btn btn-outline-warning"> <i class="fa-brands fa-google-play"></i>Google Play</button>
-
-                        <button type="button" class="btn btn-outline-dark"><i class="fa-brands fa-apple"></i>App Store</button>
+                        
                     </div>
                     <div class="col-md-6">
-                        <h2 class="about-title">A forma <b>mais fácil </b>para chegar onde quiser</h2>
-                        <p>Sem precisar ligar,eserunt suscipit neque, incidunt adipisicing elit. Enim quia quod vitae numquam commodi laudantium, saepe explicabo quam magni minima aperiam maiores, deserunt suscipit neque, incidunt sit rerum ea dignissimos.</p>                        
+                                            
                     </div>
                 </div>
             </div>
         </div>
          
-    </section>
+    </section> -
 
     <!--Sobre-->
     <section class="Sobre" id="menu-sobre">       
