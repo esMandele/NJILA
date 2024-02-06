@@ -20,6 +20,11 @@
     --grey:#444;
 }
 
+.btn{
+    background-color: var(--darkblue);
+    color: var(--darkblue);
+}
+
 span{
     color: var(--orange);
 }
