@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Cinzel:wght@400;500;700;900 & family= Libre+Baskerville:ital,wght@0,400;0,700;1,400 & família= Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,600 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family=  Poppins:100,200,300,400,500,600,900');
 
 /*GERAL*/
 *{
@@ -11,11 +11,17 @@
 }
 :root{
     --orange:#FF9100;
+    --redOrange:#ff612e;
     --red:#E30613;
     --blue:#99e6ff;
     --darkblue:#1ac6ff;
     --white:#fff;
     --dark:#1e1c2a;
+    --grey:#444;
+}
+
+span{
+    color: var(--orange);
 }
 
 h2{
@@ -25,6 +31,11 @@ h2{
 p{
     color: var(--dark);
 }
+
+section{
+    padding: 54px 0;
+}
+
 
 /*Navbar*/
 .navbar {
@@ -69,8 +80,133 @@ p{
 .about-title span{
     color: var(--orange);
 }
+
+/*BANNER*/
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.banner{
+    /*background-image: url(/img/);
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-position: center right 
+    border-radius: 0px 350px 250px 0px; ;*/
+    display: flex;
+    justify-content: right;
+    padding: 0 35px ;
+    background-color: wheat;
+}
+.banner .banner-text h2{
+   font-size: 45px ;
+   font-weight: bold;
+   color: var(--darkblue);
+}
+
+.banner .banner-text p{
+    font-size: 18px;
+    color: var(--grey);
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/*QUEM-SOMOS*/
+.quem-somos .container{
+    display: flex;
+    align-items: center;
+}
+
+.quem-somos .quem-somos-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.quem-somos .quem-somos-img{
+    width: 50%;
+}
+
+/*CARDS-FEATURES*/
+.features h3{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.features p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*CARDS*/
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.features .cards-item{
+    background-color: var(--darkblue);
+    margin: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.features .cards-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.features .cards-item .nome-feature{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.features .cards-item .descricao-feature{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.features .cards-item:hover{
+    background-color: var(--blue);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.features .cards-item:hover .nome-feature, .features .cards-item:hover .descricao-feature{
+    color: var(--white);
+}
+
+/*FOOTER*/
+.footer{
+    background-color: var(--redOrange);
+    text-align: center; 
+}
+.footer i{
+    color: var(--darkblue);
+    background-color: var(--white);
+    font-weight: 20px;
+    padding: 18px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer i:hover{
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.footer p{
+    margin-top: 10px;
+    color: var(--white);
+}
+
 @media(max-width:785px){
     .navbar{
         padding: 20px 30px;
+
     }
 }
