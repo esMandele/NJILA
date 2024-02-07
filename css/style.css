@@ -27,6 +27,8 @@ span{
 
 h2{
     font-size: 90px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 p{
@@ -89,7 +91,7 @@ section{
 
 /*BANNER*/
 .banner{
-    background-image: url(/img/motorista.jpg);
+    /*background-image: url(/img/motorista.jpg);*/
     background-repeat: no-repeat ;
     background-size: cover;
     background-attachment: fixed;
@@ -232,9 +234,83 @@ section{
     margin-top: 10px;
     color: var(--white);
 }
+/*ContactoS*/
+.contacto-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
-@media(max-width:785px){
+.contacto-info .left-side{
+    width: 50%;
+    padding: 30px;  
+    background-color: var(--darkblue);
+    border-radius: 10px; 
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contacto-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacto-info .left-side div i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: var(--white);
+}
+
+.contacto-info .left-side p{
+    font-size: 18px;
+    color: var(--orange);
+}
+
+.contacto-info .right-side{
+    width: 50%;
+}
+
+.contacto-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    color: var(--orange);
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+.contacto-info .right-side input:focus, 
+.contacto-info .right-side textarea:focus{
+    border-color: var(--redOrange);
+}
+
+.contacto-info .right-side textarea{
+    border: 1px solid var(--white);
+    color: var(--redOrange);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+
+
+
+/*Responsividade*/
+@media(max-width:850px){
     .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
         padding: 20px 30px;
 
     }
