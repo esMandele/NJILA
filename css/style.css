@@ -14,15 +14,11 @@
     --redOrange:#ff612e;
     --red:#E30613;
     --blue:#99e6ff;
+    --bLUE: #0073e6;
     --darkblue:#1ac6ff;
     --white:#fff;
     --dark:#1e1c2a;
     --grey:#444;
-}
-
-.btn{
-    background-color: var(--darkblue);
-    color: var(--darkblue);
 }
 
 span{
@@ -41,6 +37,11 @@ section{
     padding: 54px 0;
 }
 
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
 
 /*Navbar*/
 .navbar {
@@ -87,26 +88,30 @@ section{
 }
 
 /*BANNER*/
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 5%;
-}
 .banner{
-    /*background-image: url(/img/);
+    background-image: url(/img/motorista.jpg);
     background-repeat: no-repeat ;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: center right 
-    border-radius: 0px 350px 250px 0px; ;*/
+    background-position: center top; 
+    height: 450px;
+    /*border-radius: 0px 350px 250px 0px; */
     display: flex;
     justify-content: right;
-    padding: 0 35px ;
-    background-color: wheat;
+    padding: 0 45px ;
+    
 }
 .banner .banner-text h2{
    font-size: 45px ;
    font-weight: bold;
    color: var(--darkblue);
+}
+
+.banner .banner-text h5{
+    text-transform: uppercase;
+    color: var(--darkblue);
+    font-weight: bolder;
+    padding: 15px 0;
 }
 
 .banner .banner-text p{
@@ -119,7 +124,15 @@ section{
 /*QUEM-SOMOS*/
 .quem-somos .container{
     display: flex;
+    flex-direction: row;
+
     align-items: center;
+}
+
+.quem-somos h2{
+    text-align: center;
+    font-weight: bolder;
+    justify-content: center;
 }
 
 .quem-somos .quem-somos-text{
@@ -128,9 +141,20 @@ section{
 }
 
 .quem-somos .quem-somos-img{
-    width: 50%;
+  
+   justify-content: center;
+   
 }
 
+.quem-somos .btn{
+    background-color: var(--darkblue);
+    color: var(--redOrange);
+}
+
+.quem-somos .btn:hover{
+    background-color: var(--redOrange);
+    columns: var(--darkblue);
+}
 /*CARDS-FEATURES*/
 .features h3{
     text-align: center;
