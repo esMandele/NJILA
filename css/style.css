@@ -72,6 +72,9 @@ header.rolagem{
 header.rolagem a{
     color: var(--redOrange);
 }
+.nav-item{
+    margin: 0 15px;
+}
 header ul{
     list-style-type: none;
 }
@@ -111,6 +114,42 @@ header ul li a:hover{
     text-align: center;
 }
 
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+@media screen and(max-width:730px) {
+    header{
+        padding: 1.53rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .header ul il{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    open{
+        display: block;
+    }
+}
 /* .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -418,7 +457,7 @@ header ul li a:hover{
 
 /*Responsividade*/
 @media(max-width:850px){
-    .navbar{
+    header{
         position: fixed;
         top: 0;
         left: 0;
