@@ -64,14 +64,14 @@ header{
     transition: 0.3s;
 }
 
-header.rolagem{
+/*header.rolagem{
     background-color: transparent;
     padding: 20px 4%;    
 }
 
 header.rolagem a{
     color: var(--redOrange);
-}
+}*/
 .nav-item{
     margin: 0 15px;
 }
@@ -268,7 +268,7 @@ header ul li a:hover{
     }
 
     .banner .banner-text p{
-        color: var(--dark);
+        color: var(--white);
        /* background-color:var(--white);*/
     }
 }
