@@ -183,6 +183,7 @@ header ul li a:hover{
         color: var(--redOrange);
     }
 }
+
 .banner-header{
     height: 50vh;
     /*background-image: url(/assets/img/pedir-taxi.jpg);*/
